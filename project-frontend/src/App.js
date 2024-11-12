@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   getMessage = async () => {
-    const response = await fetch("http://localhost:3100/")
+    const response = await fetch("https://demo-2-0eja.onrender.com")
     const data = await response.json()
     if (response.ok) {
       this.setState({ message: data.message })
